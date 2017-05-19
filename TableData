@@ -1,0 +1,9 @@
+def printTable(itemsDict, leftWidth, rightWidth):
+      print('Table ITEMS'.center(leftWidth + rightWidth, '-'))
+      for k, v in itemsDict.items():
+          print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth) )
+
+TableData = {'Alice': 'apples' ,'Bob': 'oranges', 'Carol': 'cherries',
+'David': 'banana'}
+printTable(TableData, 12, 5)
+
